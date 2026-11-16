@@ -1,29 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Manrope } from "next/font/google";
+
+import { Header } from "@/components/layout/Header";
+import { PROFILE } from "@/content/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bebasNeue = Bebas_Neue({
+  variable: "--font-bebas-neue",
+  weight: "400",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio",
+  title: {
+    default: `${PROFILE.name} | ${PROFILE.role}`,
+    template: `%s | ${PROFILE.name}`,
+  },
+  description: PROFILE.tagline,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <Header />
+        <main className="flex flex-1 flex-col">{children}</main>
+      </body>
     </html>
   );
 }

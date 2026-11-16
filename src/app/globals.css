@@ -1,22 +1,32 @@
 @import "tailwindcss";
 
+/* Colours picked from the design mockups (dark-only design, so no light theme). */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --surface: #1a1a1a;
+  --raised: #222222;
+  --foreground: #ffffff;
+  --muted: #c7c7c7;
+  --accent: #d3e97a;
+  --divider: #484848;
+  --placeholder: #c4c4c4;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-divider: var(--divider);
+  --color-placeholder: var(--placeholder);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-bebas-neue);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
