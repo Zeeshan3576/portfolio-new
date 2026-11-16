@@ -49,7 +49,7 @@ export const PROJECTS: IProject[] = [
     badge: "Professional Work",
     info: [
       { label: "Company", value: "AB Ark" },
-      { label: "Year", value: "2025" },
+      { label: "Year", value: "2026" },
       { label: "Role", value: "Software Developer" },
       { label: "Stack", value: "Next.js, NestJS, PostgreSQL, FastAPI" },
     ],
@@ -62,7 +62,7 @@ export const PROJECTS: IProject[] = [
     badge: "Professional Work",
     info: [
       { label: "Company", value: "AB Ark" },
-      { label: "Year", value: "2025" },
+      { label: "Year", value: "2026" },
       { label: "Role", value: "Software Developer" },
       { label: "Stack", value: "React, NestJS, PostgreSQL" },
     ],
@@ -75,7 +75,7 @@ export const PROJECTS: IProject[] = [
     badge: "Professional Work",
     info: [
       { label: "Company", value: "AB Ark" },
-      { label: "Year", value: "2025" },
+      { label: "Year", value: "2026" },
       { label: "Role", value: "Software Developer" },
       { label: "Stack", value: "React, NestJS, PostgreSQL" },
     ],
